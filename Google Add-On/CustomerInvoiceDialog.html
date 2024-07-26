@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base target="_top">
+  <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+  <style>
+    button {
+      cursor: pointer;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="gray" style="margin-top: 0">Do you want to submit the data?</h2>
+  <div class="button-container">
+    <button class="action" onclick="openLoadingDialog()">Submit</button>
+    <button onclick="google.script.host.close()">Cancel</button>
+  </div>
+  <script>
+    function closeDialog() {
+        google.script.host.close();
+      }
+
+      function openLoadingDialog() {
+        google.script.run.openInvoiceLoading(); // Open the loading dialog
+        google.script.host.close(); // Close the current dialog
+      }
+  </script>
+</body>
+
+</html>

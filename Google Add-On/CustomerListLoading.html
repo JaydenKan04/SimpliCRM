@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <style>
+      h2 {
+        margin-bottom: 0;
+      }
+      .loading {
+        text-align: center;
+      }
+      .loading img {
+        width: 100%; /* Adjust the width as needed */
+        object-fit: cover; /* Ensures the image covers the area */
+      }
+    </style>
+  </head>
+  <body onload="startLoading()">
+    <div class="loading">
+      <img src="https://loading.io/assets/mod/spinner/spinner/lg.gif" alt="Loading...">
+    </div>
+    <script>
+      // When the dialog opens, it will automatically invoke this function
+      function startLoading() {
+        google.script.run.withSuccessHandler(closeDialog).addCustomersToDBS2();
+      }
+      
+      function closeDialog() {
+        google.script.host.close();
+      }
+    </script>
+  </body>
+</html>
