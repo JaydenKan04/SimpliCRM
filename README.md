@@ -20,9 +20,9 @@ SimpliCRM connects to the Notion API using OAuth2.0 for user authorization, enab
     - Provide an seamless interface for interacting with Notion database.
 
 ## App-Script
-[App-Script](https://script.google.com/home/projects/1FRgpDLeCT2nNKq-qoQeQ55DMikMb8FePbCDVkTs2Cxg8Tt7F9ABa3H-P/edit?pli=1) used in our solution. 
+[App-Script](https://script.google.com/d/1FRgpDLeCT2nNKq-qoQeQ55DMikMb8FePbCDVkTs2Cxg8Tt7F9ABa3H-P/edit?usp=sharing) used in our solution. 
 
-**PS : Our NOTION API KEY is not included in the app-script hence Notion Authorization won't run.**
+PS : Our **NOTION API KEY** is not included in the app-script hence Notion Authorization won't run.
 
 ## Group member 
 * Eddy Lim **(Group Leader)**
